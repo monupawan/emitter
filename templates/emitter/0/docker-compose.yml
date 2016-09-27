@@ -3,7 +3,7 @@ Emitter:
     io.rancher.scheduler.affinity:container_label_soft_ne: io.rancher.stack_service.name=$${stack_name}/$${service_name}
     io.rancher.container.hostname_override: container_name
   command: bash /startup.sh
-  image: 035824440926.dkr.ecr.us-east-1.amazonaws.com/nrt/emitter:2
+  image: 035824440926.dkr.ecr.us-east-1.amazonaws.com/nrt/emitter:5
   volumes:
   - /usr/local/aeris_lib/resources/:/usr/local/aeris_lib/resources
   - /usr/local/aeris_lib/emitter/:/usr/local/aeris_lib/emitter
