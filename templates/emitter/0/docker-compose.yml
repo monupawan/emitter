@@ -1,0 +1,5 @@
+FROM 035824440926.dkr.ecr.us-east-1.amazonaws.com/nrt/emitter:2
+MAINTAINER Pawan
+RUN apt-get update && apt-get install -y cron
+ADD startup.sh /
+

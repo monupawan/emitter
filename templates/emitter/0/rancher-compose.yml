@@ -1,0 +1,23 @@
+.catalog:
+  name: Emitter
+  version: Emitter-rancher1
+  description: |
+    Emitter Node.
+  minimum_rancher_version: v0.56.0
+  maintainer: "Pawan Kumar <monu.pawan@gmail.com>"
+  uuid: Emitter-0
+  questions:
+    - variable: "RabbitMq_link"
+      description: |
+        Choose the RabbitMq service to use. 
+      label: "RabbitMq stack/service"
+      default: "rabbit1"
+      required: true
+      type: "service"
+    - variable: "Nifi_link"
+      description: |
+        Choose the Apache Nifi service to use. 
+      label: "Nifi stack/service"
+      default: "worker"
+      required: true
+      type: "service"
